@@ -24,7 +24,7 @@
     ///如果启动Graph失败，则无法检测
     if([self.faceMediapipe startGraph]){
         self.startTimeInterval = [[NSDate new] timeIntervalSince1970] * 1000;
-        ///注意：检测的时候，只要具备眼睛、鼻子、下巴等特征就会结构，同时结果可能会有误差，所以dog也会有score分数
+        ///注意：检测的时候，只要具备眼睛、鼻子、下巴等特征就会结果，同时结果可能会有误差，所以dog也会有score分数
         UIImage *man = [UIImage imageNamed:@"man.jpeg"];
         UIImage *follwer = [UIImage imageNamed:@"follwer.jpeg"];
         UIImage *dog = [UIImage imageNamed:@"dog.jpeg"];
