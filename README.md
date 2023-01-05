@@ -1,6 +1,6 @@
 # FaceMediapipe
 这是一个基于meidapipe实现静态图片检测的库，可以实现毫秒级获取检测可信度分数。
-由于https://github.com/google/mediapipe项目在iOS中的支持目前并不完善，所以自己研究获取的检测数据，可信度可能会有误差。
+由于"https://github.com/google/mediapipe"项目在iOS中的支持目前并不完善，所以自己研究获取的检测数据，可信度可能会有误差。
 
 ##how to use 
 ```
