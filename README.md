@@ -3,7 +3,11 @@
 由于#https://github.com/google/mediapipe
 在iOS中的支持目前并不完善，所以自己研究获取的检测数据，可信度可能会有误差。
 
-##how to use 
+#How to use 
+
+1、将framework添加进入项目，在general->Frameworks->设置为“Embed & Sign”
+2、目前仅支持在真机上测试
+
 ```
 #import "ViewController.h"
 #import <FaceMediapipe/FaceMediapipe.h>
