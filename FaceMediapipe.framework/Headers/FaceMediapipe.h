@@ -18,7 +18,7 @@ typedef enum : NSUInteger {
 /// A delegate that can receive frames from a MediaPipe graph.
 @protocol FaceMediapipeDelegate <NSObject>
 ///获取输出分数
-- (void)didOutputDetectionScore:(NSNumber *)score;
+- (void)didOutputDetectionScores:(NSArray<NSNumber *> *)scores;
 
 @end
 
