@@ -37,9 +37,12 @@
     [self.faceMediapipe stopGraph];
 }
 
--(void)didOutputDetectionScore:(NSNumber *)score{
+-(void)didOutputDetectionScores:(NSArray<NSNumber *> *)scores{
     NSTimeInterval endTimeInterval = [[NSDate new] timeIntervalSince1970] * 1000;
-    NSLog(@"didOutputDetectionScore  score = %@  exec time = %f(hs)",score,endTimeInterval - self.startTimeInterval);
+    NSLog(@"didOutputDetectionScores  exec time = %f(hs)",endTimeInterval - self.startTimeInterval);
+    for NSNumber *number in scores{
+       NSLog(@"didOutputDetectionScores  score = %@",number);
+    }
 }
 ```
 
